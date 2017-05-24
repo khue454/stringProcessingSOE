@@ -9,6 +9,12 @@ public class processString {
 	HashMap<String, String> key = new HashMap<>();
 
 	public String getAnswer(String imageText) {
+		imageText = imageText.trim();
+		char[] b = imageText.toCharArray();
+		if(b[0]=='—'){
+			imageText = imageText.substring(1);
+		}
+		key.put("which of the following does a policy change control board do?", "A and D");
 		int countDuplicateWord = 0;
 		String[] imageSplit = imageText.split("\n");
 		for (Map.Entry<String, String> entry : key.entrySet()) {

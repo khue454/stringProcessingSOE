@@ -3,34 +3,35 @@ package BO;
 import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.StringTokenizer;
 
 public class processString {
 	HashMap<String, String> key = new HashMap<>();
 
 	public String getAnswer(String imageText) {
 		int countDuplicateWord = 0;
-        String[] imageSplit = imageText.split("\n");
-        for (Map.Entry<String, String> entry : key.entrySet()) {
-            if (entry.getKey().trim().toLowerCase().equals(imageSplit[0].trim().toLowerCase())) {
-                for (int i = 1; i < imageSplit.length; i++) {
-                    if (imageSplit[i].trim().toLowerCase().contains(entry.getValue().trim().toLowerCase())) {
-                        return imageSplit[i].substring(0, 1);
-                    } else {
-						StringTokenizer st = new StringTokenizer(entry.getValue().trim().toLowerCase()); 
-						while(st.hasMoreTokens()) {
-						    if(imageSplit[i].trim().toLowerCase().contains(st.nextToken())) {
-							    countDuplicateWord++;
+		String[] imageSplit = imageText.split("\n");
+		for (Map.Entry<String, String> entry : key.entrySet()) {
+			if (entry.getKey().trim().toLowerCase().equals(imageSplit[0].trim().toLowerCase())) {
+				for (int i = 1; i < imageSplit.length; i++) {
+					if (imageSplit[i].trim().toLowerCase().contains(entry.getValue().trim().toLowerCase())) {
+						return imageSplit[i].substring(0, 1);
+					} else {
+						StringTokenizer st = new StringTokenizer(entry.getValue().trim().toLowerCase());
+						while (st.hasMoreTokens()) {
+							if (imageSplit[i].trim().toLowerCase().contains(st.nextToken())) {
+								countDuplicateWord++;
 							}
 						}
-						if(countDuplicateWord > 5) {
+						if (countDuplicateWord > 5) {
 							return imageSplit[i].substring(0, 1);
 						}
 					}
-                }
-            }
-        }
-        return "Z";
-    
+				}
+			}
+		}
+		return "Z";
+	}
 
 	public static void main(String[] args) {
 		processString p = new processString();

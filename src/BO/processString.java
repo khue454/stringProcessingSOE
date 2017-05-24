@@ -6,15 +6,14 @@ import java.util.Map;
 import java.util.StringTokenizer;
 
 public class processString {
-	HashMap<String, String> key = new HashMap<>();
-
+	public static HashMap<String, String> key = new HashMap<>();
+	
 	public String getAnswer(String imageText) {
 		imageText = imageText.trim();
 		char[] b = imageText.toCharArray();
-		if(b[0]=='—'){
+		if (b[0] == '—') {
 			imageText = imageText.substring(1);
 		}
-		key.put("which of the following does a policy change control board do?", "A and D");
 		int countDuplicateWord = 0;
 		String[] imageSplit = imageText.split("\n");
 		for (Map.Entry<String, String> entry : key.entrySet()) {
@@ -42,6 +41,7 @@ public class processString {
 	public static void main(String[] args) {
 		processString p = new processString();
 		String a = "—\nWhich of the following does a policy change control board do?\n\nA. Assesses policies and standards and makes recommendations for change\n\nB. Determines the policy and standards library numbering scheme\n\nC. Implements technical controls as business conditions change\n\nD. Reviews requested changes to the policy framework\n\nE. A and D\n\n";
+		key.put("which of the following does a policy change control board do?", "A and D");
 		System.out.println(p.getAnswer(a));
 	}
 }

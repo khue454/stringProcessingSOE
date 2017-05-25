@@ -21,7 +21,7 @@ public class Test {
         }catch (IOException e) {
             e.printStackTrace();
         }
-        String key = "!~##!*$   Provide descriptions for this transaction kajsdj askdjk ajsdkj aks ?";
+        String key = "!~##!*$ The rule that requires financial statements to reflect the assumption that?(*%(#@*$ the business will continue operating";
         Helper helper = new Helper();
         System.out.println(helper.getCorrectQuestion(map, key));
     }

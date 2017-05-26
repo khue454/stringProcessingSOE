@@ -105,7 +105,7 @@ public class processString {
 	public static void main(String[] args) {
 		processString p = new processString();
 		String a = "—\nWhich of the following does a policy change control board do?\n\nA. Assesses policies and standards and makes recommendations for change\n\nB. Determines the policy and standards library numbering scheme\n\nC. Implements technical controls as business conditions change\n\nD. Reviews requested changes to the policy framework\n\nE. A and D\n\n";
-		key.put("which of the following does a policy change control board do?", "A and D");
-		System.out.println(p.getAnswer(a));
+		key.put("which of the following does a policy change control board do", "A and D");
+		System.out.println(p.getAnswer(processImageText(a)));
 	}
 }

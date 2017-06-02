@@ -63,41 +63,28 @@ public class processString {
         return imageSplit;
     }
 
-    public static String getAnswer(List<String> imageSplit) {
+   public static String getAnswer(List<String> imageSplit) {
         List<Integer> countDuplicateWord = new ArrayList<>();
-        int countSuccess = 0;
         int countCompare = 0;
-        for (Map.Entry<String, String> entry : key.entrySet()) {
+        for (Map.Entry<String, List<String>> entry : key.entrySet()) {
             if (entry.getKey().trim().toLowerCase().equals(imageSplit.get(0).trim().toLowerCase())) {
                 for (int i = 1; i < imageSplit.size(); i++) {
-                    if (imageSplit.get(i).trim().toLowerCase().contains(entry.getValue().trim().toLowerCase())) {
-                        countSuccess = i;
+                    StringTokenizer stImage = new StringTokenizer(imageSplit.get(i));
+                    for (int j = 0; j < entry.getValue().size(); j++) {
+                        if (stImage.toString().equals(entry.getValue().get(j))) {
+                            countCompare++;
+                        }
                     }
                 }
-                if (countSuccess > 0) {
-                    return imageSplit.get(countSuccess).trim().substring(0, 1);
-                } else {
-                    StringTokenizer stFile = new StringTokenizer(entry.getValue().trim().toLowerCase());
-                    for (int i = 1; i < imageSplit.size(); i++) {
-                        StringTokenizer stImage = new StringTokenizer(imageSplit.get(i));
-                        while (stImage.hasMoreTokens()) {
-                            while (stFile.hasMoreTokens()) {
-                                if (stFile.equals(stImage)) {
-                                    countCompare++;
-                                }
-                            }
-                        }
-                        countDuplicateWord.add(countCompare);
-                    }
-                    int max = countDuplicateWord.get(0);
-                    for (int i = 0; i < countDuplicateWord.size(); i++) {
-                        if (countDuplicateWord.get(i) < countDuplicateWord.get(i + 1)) {
-                            max = countDuplicateWord.get(i + 1);
-                        }
-                    }
-                    return imageSplit.get(max + 1).substring(0, 1);
+                countDuplicateWord.add(countCompare);
+            }
+            int max = countDuplicateWord.get(0);
+            for (int i = 0; i < countDuplicateWord.size(); i++) {
+                if (countDuplicateWord.get(i) < countDuplicateWord.get(i + 1)) {
+                    max = countDuplicateWord.get(i + 1);
                 }
             }
+            return imageSplit.get(max + 1).substring(0, 1);
         }
         return "Z";
     }

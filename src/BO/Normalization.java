@@ -53,14 +53,14 @@ class Normalization {
         else {
 //            List<List<String>> values = (keyMap.values().stream().collect(Collectors.toList()));
 //            questionSplit = values.get(values.size() - 1);
-            List<String> values = keyMap.values().stream().collect(Collectors.toList()).get(keyMap.values().size()-1);
+            List<String> values = keyMap.values().stream().collect(Collectors.toList()).get(keyMap.values().size() - 1);
             if (values.size() > 1) {
                 values.sort(Comparator.comparing(String::length));
                 question = values.get(0);
             } else question = values.get(0);
             int length = keyMap.keySet().parallelStream().collect(Collectors.toList()).get(keyMap.size() - 1);
             questionSplit = Arrays
-                    .stream(question.split("\\s++"))
+                    .stream(getTextNormalized(question).split("\\s++"))
                     .collect(Collectors.toList());
             if (questionSplit.size() < 20) {
                 System.out.println("< 20");
@@ -69,7 +69,25 @@ class Normalization {
                 return ((double) length * 10 / questionSplit.size()) >= 8.5 ? question : "ERROR";
             } else {
                 System.out.println(">= 20");
-                return ((double) length * 10 / questionSplit.size()) >= 7.5 ? question : "ERROR";
+                double percent = ((double) length * 10 / questionSplit.size());
+                if (percent >= 7.5) return question;
+                else {
+                    image = getTextNormalized(image);
+                    List<String> imageQuestions = Arrays
+                            .stream(image.split("\\s++"))
+                            .collect(Collectors.toList());
+                    int imageSize = imageQuestions.size();
+                    int questionSize = questionSplit.size();
+                    int count = 0;
+                    length = imageSize > questionSize ? questionSize - length : imageSize - length;
+                    for (int i = 1; i < length; i++) {
+                        if (questionSplit.get(questionSize - i).equalsIgnoreCase(imageQuestions.get(imageSize - i))) {
+                            count++;
+                        }
+                    }
+                    percent += (double) count*10/questionSize;
+                    return percent>=7.5? question: "ERROR";
+                }
             }
         }
     }

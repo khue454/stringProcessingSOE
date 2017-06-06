@@ -64,28 +64,29 @@ public class processString {
 
     public static String getAnswer(List<String> imageSplit, String question) {
         List<Integer> countDuplicateWord = new ArrayList<>();
-        int countCompare = 0;
-        for (Map.Entry<String, List<String>> entry : key.entrySet()) {
-            if (entry.getKey().trim().toLowerCase().equals(question.trim().toLowerCase())) {
-                for (int i = 1; i < imageSplit.size(); i++) {
-                    StringTokenizer stImage = new StringTokenizer(imageSplit.get(i));
-                    for (int j = 0; j < entry.getValue().size(); j++) {
-                        if (stImage.toString().equals(entry.getValue().get(j))) {
-                            countCompare++;
-                        }
-                    }
-                }
-                countDuplicateWord.add(countCompare);
-            }
-            int max = countDuplicateWord.get(0);
-            for (int i = 0; i < countDuplicateWord.size(); i++) {
-                if (countDuplicateWord.get(i) < countDuplicateWord.get(i + 1)) {
-                    max = countDuplicateWord.get(i + 1);
+        for (int i = 1; i < imageSplit.size(); i++) {
+            int countCompare = 0;
+            StringTokenizer stImage = new StringTokenizer(imageSplit.get(i));
+            for (int j = 0; j < key.get(question).size(); j++) {
+                if (stImage.toString().equals(key.get(question).get(j))) {
+                    countCompare++;
                 }
             }
-            return imageSplit.get(max + 1).substring(0, 1);
+            countDuplicateWord.add(countCompare);
         }
-        return "Z";
+        int max = countDuplicateWord.get(0);
+        int answerIndex = 0;
+        for (int i = 1; i < countDuplicateWord.size(); i++) {
+            if (countDuplicateWord.get(i) > max) {
+                max = countDuplicateWord.get(i);
+                answerIndex = i;
+            }
+        }
+        if (max != 0) {
+            return imageSplit.get(answerIndex + 1).substring(0, 1);
+        } else {
+            return "Z";
+        }
     }
 
 	public static void main(String[] args) {

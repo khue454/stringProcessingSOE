@@ -57,13 +57,15 @@ class Normalization {
         }
     }
 
-    private String getQuestion(String image) {
-        String question;
-        image = image.substring(0, image.indexOf("\nA. ") - 1);
+     String getQuestion(String image) {
+        String question = "";
+        image = image.trim();
+        image = image.startsWith("(") ? image.substring(image.indexOf(")")+1) : image;
+
         String[] imageSplit = image.split("[\r\n]++");
-        List<String> list = Arrays.stream(imageSplit).filter(s -> !s.isEmpty() && s != null).collect(Collectors.toList());
-        if (list.size() > 1) question = list.get(list.size() - 1);
-        else question = list.get(0);
+        for (String item : imageSplit) {
+            question += item.isEmpty() || item == null ? "" : item + " ";
+        }
         return question;
     }
 

@@ -31,6 +31,9 @@ public class Test {
 		}
 		Normalization normalization = new Normalization();
 
-		System.out.println(normalization.getCorrectQuestion(map, "Activity diagrams are used to support \nA. The process view "));
+		System.out.println(normalization.getCorrectQuestion(map, "(imagePas asdasd )Which of the following is a typical design domain of blackboard architecture?\nA. AI system."));
+		for(String str: map.get(normalization.getCorrectQuestion(map, "2.Which of the following is a typical design domain of blackboard architecture?\nA. AI system."))){
+			System.out.println(str);
+		}
 	}
 }

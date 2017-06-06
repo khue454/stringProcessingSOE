@@ -19,14 +19,10 @@ public class Test {
 					if (stringSplit.length == 2) {
 						String key = stringSplit[0].trim();
 						String value = stringSplit[1].trim();
-						// String key = map.get();
-						List<String> values;
-						if (map.get(key) == null)
-							values = new ArrayList<>();
-						else {
-							values = map.get(key);
-							values.add(value);
-						}
+//                        String key = map.get();
+						List<String> values = map.get(key) == null ?
+								new ArrayList<>() : map.get(key);
+						values.add(value);
 						map.put(key, values);
 					}
 				}
@@ -37,13 +33,13 @@ public class Test {
 		String key = "!~##!*$ The rule that requires financial statements to reflect the assumption that?(*%(#@*$ the business will continue operating";
 		Normalization normalization = new Normalization();
 		System.out.println(normalization.getQuestion(
-				"A database transaction. by de?nition. must be ACID (atomic. consistent. isolated and durable). What does ‘Consistent' mean?\n"
-						+ "A. ‘Consistent' means that: Transactions provide an 'all-or-nothing' proposition. stating that each work-unit performed in a database must either complete in its entirety or have no effectwhatsoever"
-						+ "\nB. ‘Consistent' means that: Transactions must notviolate any integrity constraints during its execution"));
+				"A database transaction. by de?nition. must be ACID (atomic. consistent. isolated and durable). What does ï¿½Consistent' mean?\n"
+						+ "A. ï¿½Consistent' means that: Transactions provide an 'all-or-nothing' proposition. stating that each work-unit performed in a database must either complete in its entirety or have no effectwhatsoever"
+						+ "\nB. ï¿½Consistent' means that: Transactions must notviolate any integrity constraints during its execution"));
 		String key1 = normalization.getCorrectQuestion(map,
-				"A database transaction. by de?nition. must be ACID (atomic. consistent. isolated and durable). What does ‘Consistent' mean?\n"
-						+ "A. ‘Consistent' means that: Transactions provide an 'all-or-nothing' proposition. stating that each work-unit performed in a database must either complete in its entirety or have no effectwhatsoever"
-						+ "\nB. ‘Consistent' means that: Transactions must notviolate any integrity constraints during its execution");
+				"A database transaction. by de?nition. must be ACID (atomic. consistent. isolated and durable). What does ï¿½Consistent' mean?\n"
+						+ "A. ï¿½Consistent' means that: Transactions provide an 'all-or-nothing' proposition. stating that each work-unit performed in a database must either complete in its entirety or have no effectwhatsoever"
+						+ "\nB. ï¿½Consistent' means that: Transactions must notviolate any integrity constraints during its execution");
 		System.out.println(key1);
 		System.out.println(map.get(key1));
 	}

@@ -58,21 +58,7 @@ class Normalization {
         }
     }
 
-    @SuppressWarnings("unused")
-        // get normal map with the normal all text of it
-    Map<String, List<String>> getNormalizedMap(Map<String, List<String>> map) {
-        Map<String, List<String>> normalMap = new HashMap<>();
-        for (String key : map.keySet()) {
-            List<String> values = map.get(key);
-            List<String> normalValues = values.parallelStream()
-                    .map(v -> getTextNormalized(v))
-                    .collect(Collectors.toList());
-            normalMap.put(getTextNormalized(key), normalValues);
-        }
-        return normalMap;
-    }
-
-    String getQuestion(String image) {
+    private String getQuestion(String image) {
         String question;
         image = image.substring(0, image.indexOf("\nA. ") - 1);
         String[] imageSplit = image.split("[\r\n]++");
@@ -83,22 +69,37 @@ class Normalization {
     }
 
     // get normalized text
-    private String getTextNormalized(String string) {
-        String[] stringSplit = string.toLowerCase().split("\\s++");
+    String getTextNormalized(String string) {
+        String[] stringSplit = string.toLowerCase().split("[.]");
         String valueAtPos_0 = stringSplit[0];
-        boolean isStartKey = false;
-
-        // split string to check valid
-        // remove first positive of split string if startwish 'qn' or endwish '.'
-        if (valueAtPos_0.trim().toLowerCase().startsWith("qn")) isStartKey = true;
-        else if (valueAtPos_0.trim().endsWith(".")) isStartKey = true;
-        if (isStartKey) {
+        boolean checkFirst = false;
+        try {
+            Integer.parseInt(valueAtPos_0);
+            checkFirst = true;
+        } catch (Exception e) {
+        }
+        if (checkFirst && stringSplit.length > 1) {
             string = "";
-            for (int i = 1; i < stringSplit.length; i++) {
-                string += stringSplit[i].trim();
+            int length = stringSplit.length;
+            for (int i = 1; i < length; i++) {
+                string += stringSplit[i] + " ";
+            }
+        } else {
+            stringSplit = string.toLowerCase().split("\\s++");
+            valueAtPos_0 = stringSplit[0];
+            boolean isStartKey = false;
+
+            // split string to check valid
+            // remove first positive of split string if startwish 'qn' or endwish '.'
+            if (valueAtPos_0.trim().toLowerCase().startsWith("qn")) isStartKey = true;
+            else if (valueAtPos_0.trim().endsWith(".")) isStartKey = true;
+            if (isStartKey) {
+                string = "";
+                for (int i = 1; i < stringSplit.length; i++) {
+                    string += stringSplit[i].trim();
+                }
             }
         }
-
         // normalize text, keep digits and letters only
         stringSplit = string.toLowerCase().split("[^a-z0-9]");
         StringBuilder textNormalized = new StringBuilder();

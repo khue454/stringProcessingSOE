@@ -10,7 +10,7 @@ public class Test {
 	public static void main(String[] args) {
 		Map<String, List<String>> map = new HashMap<>();
 		try {
-			FileReader fr = new FileReader("DATABASE_full.txt");
+			FileReader fr = new FileReader("SWD_Final.txt");
 			LineNumberReader lr = new LineNumberReader(fr);
 			String st;
 			while ((st = lr.readLine()) != null) {
@@ -30,17 +30,8 @@ public class Test {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		String key = "!~##!*$ The rule that requires financial statements to reflect the assumption that?(*%(#@*$ the business will continue operating";
 		Normalization normalization = new Normalization();
-		System.out.println(normalization.getQuestion(
-				"A database transaction. by de?nition. must be ACID (atomic. consistent. isolated and durable). What does �Consistent' mean?\n"
-						+ "A. �Consistent' means that: Transactions provide an 'all-or-nothing' proposition. stating that each work-unit performed in a database must either complete in its entirety or have no effectwhatsoever"
-						+ "\nB. �Consistent' means that: Transactions must notviolate any integrity constraints during its execution"));
-		String key1 = normalization.getCorrectQuestion(map,
-				"A database transaction. by de?nition. must be ACID (atomic. consistent. isolated and durable). What does �Consistent' mean?\n"
-						+ "A. �Consistent' means that: Transactions provide an 'all-or-nothing' proposition. stating that each work-unit performed in a database must either complete in its entirety or have no effectwhatsoever"
-						+ "\nB. �Consistent' means that: Transactions must notviolate any integrity constraints during its execution");
-		System.out.println(key1);
-		System.out.println(map.get(key1));
+
+		System.out.println(normalization.getCorrectQuestion(map, "Activity diagrams are used to support \nA. The process view "));
 	}
 }

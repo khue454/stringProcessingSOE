@@ -36,7 +36,6 @@ class Normalization {
                 // break if they are not the same.
                 for (int i = 0; i < length; i++) {
                     if (questionSplit.get(i).equals(keySplit.get(i))) count++;
-                    else break;
                 }
 
                 // if value in keyMap is nullable, create new instance

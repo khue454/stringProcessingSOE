@@ -22,13 +22,16 @@ class Normalization {
         for (String key : map.keySet()) {
 
             // split key via space
+            String questionInMap = getTextNormalized(key);
             List<String> keySplit = Arrays
-                    .stream(getTextNormalized(key).split("\\s++"))
+                    .stream(questionInMap.split("\\s++"))
                     .collect(Collectors.toList());
 
             // If both the key and the question begin with the same sequence
             // it will be count...
-            if (keySplit.get(0).equals(questionSplit.get(0))) {
+            if (questionInMap.trim().equalsIgnoreCase(question.trim())) {
+                return key;
+            } else if (keySplit.get(0).equals(questionSplit.get(0))) {
                 int count = 0;
                 int length = keySplit.size() > questionSplit.size() ? questionSplit.size() : keySplit.size();
 
@@ -48,19 +51,34 @@ class Normalization {
         }
         if (keyMap.keySet().isEmpty()) return "Error";
         else {
-            List<List<String>> values = (keyMap.values().stream().collect(Collectors.toList()));
-            questionSplit = values.get(values.size() - 1);
-            if (questionSplit.size() > 1) {
-                questionSplit.sort(Comparator.comparing(String::length));
-                return questionSplit.get(0);
-            } else return questionSplit.get(0);
+//            List<List<String>> values = (keyMap.values().stream().collect(Collectors.toList()));
+//            questionSplit = values.get(values.size() - 1);
+            List<String> values = keyMap.values().stream().collect(Collectors.toList()).get(keyMap.values().size()-1);
+            if (values.size() > 1) {
+                values.sort(Comparator.comparing(String::length));
+                question = values.get(0);
+            } else question = values.get(0);
+            int length = keyMap.keySet().parallelStream().collect(Collectors.toList()).get(keyMap.size() - 1);
+            questionSplit = Arrays
+                    .stream(question.split("\\s++"))
+                    .collect(Collectors.toList());
+            if (questionSplit.size() < 20) {
+                System.out.println("< 20");
+                System.out.println(length);
+                System.out.println(questionSplit.size());
+                return ((double) length * 10 / questionSplit.size()) >= 8.5 ? question : "ERROR";
+            } else {
+                System.out.println(">= 20");
+                return ((double) length * 10 / questionSplit.size()) >= 7.5 ? question : "ERROR";
+            }
         }
     }
 
-     String getQuestion(String image) {
+    private String getQuestion(String image) {
         String question = "";
+        image = image.substring(0, image.indexOf("\nA.") - 1);
         image = image.trim();
-        image = image.startsWith("(") ? image.substring(image.indexOf(")")+1) : image;
+        image = image.startsWith("(") ? image.substring(image.indexOf(")") + 1) : image;
 
         String[] imageSplit = image.split("[\r\n]++");
         for (String item : imageSplit) {

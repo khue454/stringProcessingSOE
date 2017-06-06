@@ -1,4 +1,4 @@
-1.Activity diagrams are used to support | The process view
+1.Activity diagrams are used to support. | The process view
 2.With a good software design, which is benefit we will get | It helps to coordinate development teams to work together orderly 
 3.Which of the following is advantage of broker architecture| Changeability and extensibility 
 4.The outcomes of Object Oriented Analysis stage are| Requirement Specification, Initial logic structure of the system 

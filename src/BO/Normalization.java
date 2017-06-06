@@ -6,9 +6,11 @@ import java.util.stream.Collectors;
 class Normalization {
 
     // get the correct or most approximate question
-    String getCorrectQuestion(Map<String, List<String>> map, String question) {
+    String getCorrectQuestion(Map<String, List<String>> map, String image) {
+
+        image = getQuestion(image);
         // normalize question
-        question = getTextNormalized(question);
+        String question = getTextNormalized(image);
 
         // split question via space
         List<String> questionSplit = Arrays
@@ -57,7 +59,7 @@ class Normalization {
     }
 
     @SuppressWarnings("unused")
-    // get normal map with the normal all text of it
+        // get normal map with the normal all text of it
     Map<String, List<String>> getNormalizedMap(Map<String, List<String>> map) {
         Map<String, List<String>> normalMap = new HashMap<>();
         for (String key : map.keySet()) {
@@ -70,8 +72,18 @@ class Normalization {
         return normalMap;
     }
 
+    String getQuestion(String image) {
+        String question;
+        image = image.substring(0, image.indexOf("\nA. ") - 1);
+        String[] imageSplit = image.split("[\r\n]++");
+        List<String> list = Arrays.stream(imageSplit).filter(s -> !s.isEmpty() && s != null).collect(Collectors.toList());
+        if (list.size() > 1) question = list.get(list.size() - 1);
+        else question = list.get(0);
+        return question;
+    }
+
     // get normalized text
-    String getTextNormalized(String string) {
+    private String getTextNormalized(String string) {
         String[] stringSplit = string.toLowerCase().split("\\s++");
         String valueAtPos_0 = stringSplit[0];
         boolean isStartKey = false;

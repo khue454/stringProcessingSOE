@@ -54,8 +54,7 @@ public class processString {
             rootIndex = imageText.indexOf("F.");
         }
         imageSplit.add(imageText.substring(rootIndex));
-        imageSplit.set(0, imageSplit.get(0).replace(".", ""));
-        for (int i = 0; i < imageSplit.size(); i++) {
+        for (int i = 1; i < imageSplit.size(); i++) {
             imageSplit.set(i, imageSplit.get(i).replace("\n", ""));
             imageSplit.set(i, imageSplit.get(i).replace("?", ""));
             imageSplit.set(i, imageSplit.get(i).replace("—", ""));
@@ -63,11 +62,11 @@ public class processString {
         return imageSplit;
     }
 
-   public static String getAnswer(List<String> imageSplit) {
+    public static String getAnswer(List<String> imageSplit, String question) {
         List<Integer> countDuplicateWord = new ArrayList<>();
         int countCompare = 0;
         for (Map.Entry<String, List<String>> entry : key.entrySet()) {
-            if (entry.getKey().trim().toLowerCase().equals(imageSplit.get(0).trim().toLowerCase())) {
+            if (entry.getKey().trim().toLowerCase().equals(question.trim().toLowerCase())) {
                 for (int i = 1; i < imageSplit.size(); i++) {
                     StringTokenizer stImage = new StringTokenizer(imageSplit.get(i));
                     for (int j = 0; j < entry.getValue().size(); j++) {

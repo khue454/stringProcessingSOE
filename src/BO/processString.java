@@ -68,8 +68,10 @@ public class processString {
             int countCompare = 0;
             StringTokenizer stImage = new StringTokenizer(imageSplit.get(i));
             for (int j = 0; j < key.get(question).size(); j++) {
-                if (stImage.toString().equals(key.get(question).get(j))) {
-                    countCompare++;
+                while (stImage.hasMoreTokens()) {
+                    if (stImage.toString().equals(key.get(question).get(j))) {
+                        countCompare++;
+                    }
                 }
             }
             countDuplicateWord.add(countCompare);

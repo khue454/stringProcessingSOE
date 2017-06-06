@@ -27,7 +27,7 @@ class Normalization {
                     .collect(Collectors.toList());
 
             // If both the key and the question begin with the same sequence
-            // it will be count
+            // it will be count...
             if (keySplit.get(0).equals(questionSplit.get(0))) {
                 int count = 0;
                 int length = keySplit.size() > questionSplit.size() ? questionSplit.size() : keySplit.size();

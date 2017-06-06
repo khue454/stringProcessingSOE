@@ -1,4 +1,4 @@
-1.Activity diagrams are used to support | The process view 
+1.Activity diagrams are used to support | The process view
 2.With a good software design, which is benefit we will get | It helps to coordinate development teams to work together orderly 
 3.Which of the following is advantage of broker architecture| Changeability and extensibility 
 4.The outcomes of Object Oriented Analysis stage are| Requirement Specification, Initial logic structure of the system 
@@ -12,7 +12,7 @@
 12.Which of the following is NOT benefit of distributed architecture| Testability
 13.Which of the following architecture is suitable for the embedded system software design| Process-Control Architecture 
 14.When you are requested to develop a Radar software system, a Traffic management system, etc, which of the following architecture is the best suitable for development| PAC architecture 
-15.Which of the perspective where the connectors in software architecture might be classification into 4 types: Variable, environment resource, method, message| Based on connector’s information carrier 
+15.Which of the perspective where the connectors in software architecture might be classification into 4 types: Variable, environment resource, method, message| Based on connectorï¿½s information carrier 
 16.ATAM is which of the following methods| Architecture Trace-off Analysis Method 
 17.Repository architecture and Backboard architecture is categorized into which of the following architecture style| Data-centered architecture style 
 18.Which of the following is TRUE?| c.	Hardware independence does not imply software independence 
@@ -23,20 +23,20 @@
 23.Which of the following is one of advantages of Component-Based architecture| Productivity for the software development and future software development 
 24.The usability of a user interface is enhanced by consistency and integration| The usability of a user interface is enhanced by consistency and integration
 25.Which of the following is a limitation of Layered architecture| Lower runtime performance
-26.User interface Evaluation does NOT  focus on which of following features| Only the tailor –able of the user interface 
+26.User interface Evaluation does NOT  focus on which of following features| Only the tailor ï¿½able of the user interface 
 27.Quality attributes are used to make architectural decision, which of the following is NOT a quality attribute| Productivity
 28.Which of the following is a limitation of component architecture| Adaption of components 
 29.The acronym SAPCO is used  for which of following purpose| Describing the Satisfactory principles of user interface 
 30.Which of the following guides is NOT the guideline for mapping runtime elements in a software architecture design| If the two elements are mapped to a single process, the connector could be mapped to local method invocation
-31.Polymorphism principles mean that….| An object can have different appearance/behaviors under difference circumstances 
-32.Availability refers to…| a system’s capability to be available 24/7 
+31.Polymorphism principles mean thatï¿½.| An object can have different appearance/behaviors under difference circumstances 
+32.Availability refers toï¿½| a systemï¿½s capability to be available 24/7 
 33.Which of the following is NOT an architecture style in hierarchical architecture| Client-Server architecture 
 34.Which of the following is the limitation of Repository Architecture Style?| Data store reliability availability is a very important issue 
 35.High dependency between data structure of  data store and its agency| High dependency between data structure of  data store and its agency
 36.Which of the following is NOT a buffer- based software architecture| Peer-to-peer connection 
 37.Which of the following is a buffer- based software architecture| Publish-Subscribe Messaging(P&S)
 38.In UML 2.0, which diagram derived from use case scenarios| Use-case diagram 
-39.Which of the following is an Open-Close principle’s implication| Keep attributes private
+39.Which of the following is an Open-Close principleï¿½s implication| Keep attributes private
 40.Which of the following is NOT the benefit of multi-tier architecture style| C-	Load balancing 
 41.In Client-Server architecture style, there are follow types| Thin-client, Fat-client 
 42.In Thin-client type, the server includes which  of the following processing | Data storage processing, Business Logic Processing 
@@ -50,14 +50,14 @@
 50.Which are the categories of operations that a class can provide| Constructor, Destructor, Accessor, Mutator 
 51.Polymorphism implies the following:  < knowledge of OOP, need review>| All of the others 
 52.Which of the following are considered as Runtime attribute| Availability, Security, Performance, Usability 
-53.Which of the following is not an Open-Closed principle’s implication| Feel free to change software code 
+53.Which of the following is not an Open-Closed principleï¿½s implication| Feel free to change software code 
 54.What is a class involved in accomplishing the responsibility of a class called in CRC modeling| 	Collaborator 
 55.Which of the following diagram is NOT an structural diagram| Sequence diagram 
 56.In UML 2.0 Which of the following is true| Sequence Diagram both concurrencies and loops can be specified 
-57.In a sequence diagram, boxes on top of the diagram can represent classes, objects and actors. We found a description of a box as follow “John:Doctor”. Which of the following is correct expression| An object named “John” whose class is “Doctor” 
+57.In a sequence diagram, boxes on top of the diagram can represent classes, objects and actors. We found a description of a box as follow ï¿½John:Doctorï¿½. Which of the following is correct expression| An object named ï¿½Johnï¿½ whose class is ï¿½Doctorï¿½ 
 58.Which of the following is Open-Closed principle| Open to extension, Close to modification 
 59.Which is not a structure which can be described in a software architecture| 	Dynamic structure
-60.Which view in “4+1” view model identifies software modules and their boundaries, interfaces, external environment, usage scenarios| 	Logical view 
+60.Which view in ï¿½4+1ï¿½ view model identifies software modules and their boundaries, interfaces, external environment, usage scenarios| 	Logical view 
 61.Which of the following are not benefits of pipe and filter| Interactive 
 62.Which of the following are not benefits of batch sequential| All of the above 
 63.The below image is a snapshot of which architecture styles following| Event-based architecture
@@ -65,8 +65,8 @@
 65.Which of the following is true about buffered message system| All of the others
 66.The below image is a snapshot of which architecture styles following| Repository architecture
 67.Which of the following architecture is suitable for the embedded system software design| Process-Control Architecture 
-68.Which of the following is an Open-Close principle’s implication| Separate interface and implementation 
-69.Based on connector’s information carrier, the connectors in software architecture might be classification into | Variable, Environment resource, Method, Message 
+68.Which of the following is an Open-Close principleï¿½s implication| Separate interface and implementation 
+69.Based on connectorï¿½s information carrier, the connectors in software architecture might be classification into | Variable, Environment resource, Method, Message 
 70.Which of the following diagram called| Sequence diagram
 71.Polymorphism principles means that| An object can have different appearance/behaviors under different circumstances.
 72.Which of the following are considered as Business attributes| Time to market, Lifetime, Cost 
@@ -128,7 +128,7 @@
 # The important features of a distributed architecture are ______. Which is the best choice?| all of the others
 # In Interaction oriented software architecture, ___ provides the data abstraction and all core business logic on data processing. Which is the best choice?| The data module
 # Which of the following is the correct statement about Component-based architecture?| - it divides the problem into sub-problem each associated with component partitions
-# The interaction oriented software architecture decomposes the system into___. Which is the best choice?| 3 major partitions – Data module, Control module, Presentation Module
+# The interaction oriented software architecture decomposes the system into___. Which is the best choice?| 3 major partitions ï¿½ Data module, Control module, Presentation Module
 # Which of the following statement is a correct description about the job of an architecture designer?| Exhaust all possible solutions, pick up the best one
 # Which of the following is the main motivation of Component-based architecture?| Component reusability
 # What of the following statement about the characteristic in Service-oriented and Broker are Correct?| Both are hard
@@ -150,13 +150,13 @@
 9.Facts are installed in the Blackboard component of the Blackboard architecture?| A-	True
 10.RPG is widely used to implement batch sequential| A-	True
 11.Event-based architecture style is a buffered architecture| False
-12.Only directly adjacent layers can invoke each other’s methods in a layered architecture.| B-	False 
+12.Only directly adjacent layers can invoke each otherï¿½s methods in a layered architecture.| B-	False 
 13.Java can be used to implement a pipe and filter design system| A-	True 
 14.The control flow in batch sequential is implicit.| True
 16.In Thin-client type, the server includes which  of the following processing| C-	Data storage processing, Business Logic Processing
 17.Implicit notification is often used in blackboard architecture| A-	True 
 18.The control flow in pipe and filter is explicit.| A-	True 
-19.FPT’s University CMS is an example of repository design| True
+19.FPTï¿½s University CMS is an example of repository design| True
 20.The master-slave architecture is a specialized form of main-subroutine architecture|True
 21.In Fat-client type, the client includes which  of the following processing| A-	Presentation processing, Business Logic Processing
 22.Repository architecture design could NOT be object-oriented design| True
@@ -168,7 +168,7 @@
 28.Multiple event targets can register with same event source.| A-	True
 29.Hierarchical architecture is a procedure-oriented design paradigm only.| A-	False
 30.Sequential flow control can be predetermined in pipe and filter.| A-	True
-32.Which of the following is not an open-close principles’s implication?| b.	Feel free to change software code.
+32.Which of the following is not an open-close principlesï¿½s implication?| b.	Feel free to change software code.
 33.Architecture design is about choosing the right single architecture style for a project| b.	False
 34.Software quality attributes must satisfy functional requirements| b.	False
 35.UML diagrams are used for system analysis and design| a.	True
@@ -177,7 +177,7 @@
 38.Which of the following are considered as implementation attributes?| a.	Interoperability, maintainability, prortability, fexibility
 39.Which of the following notations is used to support the logical view?| d.	All of the others
 40.Pipe-and-Filter is one of the architecture styles| True
-41.In a sequence diagram, boxes on top of the diagram can represent classes, objects, and actors. We found a desscription of a box as follow “John:Doctor”. Which of the following is correct experssion?| a.	An object named “John” whose class is “Doctor”
+41.In a sequence diagram, boxes on top of the diagram can represent classes, objects, and actors. We found a desscription of a box as follow ï¿½John:Doctorï¿½. Which of the following is correct experssion?| a.	An object named ï¿½Johnï¿½ whose class is ï¿½Doctorï¿½
 42.Sequence diagram both concurrencies and loops can be specified| c.	Sequence diagram both concurrencies and loops can be specified
 43.Which of the following diagram is NOT an structural diagram| 43.	Which of the following diagram is NOT an structural diagram
 44.The purpose of the software design phase is to product a software requirement specification| False
@@ -188,7 +188,7 @@
 50.Which are the categories of operations that a class can provide?| b.	Constructor, Destructor, Accessor, Mutator
 51.Which of the following are considered as Runtime attributes| b.	Availability, Security, Performance, Usabilty
 52.Object-oriented design is a design methodology| True
-53.Which view in “4+1” view model identifies software module and their boundaries, interfaces, external environment usage senarios, etc.| a.	Logical view
+53.Which view in ï¿½4+1ï¿½ view model identifies software module and their boundaries, interfaces, external environment usage senarios, etc.| a.	Logical view
 54.Which of the following is a feature of object oriented methodology?| d.	Inheritance
 55.Which is NOT a structure which can be described in a software architecture?| c.	Operation structure
 56.Architecture styles contribute to software quality attributes| a.	True
@@ -203,7 +203,7 @@
 65.Which of the following is NOT a typical style of distributed architecture?| MVC
 66.In SOA architecture, Interperability means what?| c.	Technically any client or any services regardless of their Platform, Technology, Vendors, Language implementations
 67.Event-based architecture is appropriate for a compiler in an IDE design| a.	False.	
-68.The image below is an example of static style of user interce’slaout? Which which is the correct answer?| a.	It’s 1D layout
+68.The image below is an example of static style of user interceï¿½slaout? Which which is the correct answer?| a.	Itï¿½s 1D layout
 69.The abstraction and presentation components in a PAC agent do not talk to each other directly| a.	True
 70.The PAC architecture is a hieracchically structured sofware architecture| a.	True
 71.There is always onlyone architecture design that can meet all requirements| a.	False
@@ -279,7 +279,7 @@
 3.Web service is an example of hierarchy architecture design.|	True.
 4.Hierarchical architecture is a procedure-oriented design paradigm only.|	False.
 5.Hierarchical architecture can also be applied in any object-oriented software design.|	True.
-6.Only directly adjacent layers can invoke each other’s methods in a layered architecture.|	False.
+6.Only directly adjacent layers can invoke each otherï¿½s methods in a layered architecture.|	False.
 7.Component deployment is a good practice in a layered architecture.|	True.
 8.There is data sharing between all layers in a layered architecture.|	False.
 9.The callback method is typically used in a main-subroutine architecture.|	False.
@@ -308,7 +308,7 @@
 9.Event-based architecture is a good candidate for interactive systems with graphic user interface.| True
 10.Blackboard architecture is difficult to debug| True
 1.A user interface is mainly for accepting inputs, conducting computations, and displaying outputs.| Fasle
-2.Chapter 3 of this book, on “models for software architecture,” has nothing to do with user interfaces described in this chapter.| False
+2.Chapter 3 of this book, on ï¿½models for software architecture,ï¿½ has nothing to do with user interfaces described in this chapter.| False
 3.User interface refers to static components and their layout, not dynamically displayed information.| False
 4.The MVC models suggest the separation of the user interface from the logic of the software system?| a.	True.
 6.The look and feel of a user interface can be defined by using engineering rules.| False
@@ -344,7 +344,7 @@
 # In Non-buffered Event-based architecture, how many partitions a system could be separated into? | A.  2 partitions
 # Which is NOT a software structure that software architecture can be described with? | C.  State structure
 # Choose the incorrect statement. | C.  UML diagram could be group into 3 major categories: Structural, Behavioral and Deployment.
-# Which is the correct order of these steps? | Determine… => Quantify… => Compute…
+# Which is the correct order of these steps? | Determineï¿½ => Quantifyï¿½ => Computeï¿½
 # According to the classification on information carrier, when your application has 2 software elements which are in the same process and they may used a shared variable to exchange information. Which of the following is CORRECT category the connector should be? | B.Method
 # Availability refers to ____ | D.  The ability of a system to be available 24x7
 # Portability refers to ____ | A.  The ability to modify the system and extend it conveniently.
@@ -402,16 +402,16 @@
 # The following image is an example of one of architecture style below. Which is the best choice? | Multi-tier Architecture Style (correct)
 # Sequential flow control can be predetermined in batch sequential. | True (correct)
 # Facts are installed in the Blackboard component of the Blackboard architecture? | True(correct)
-# RPG is widely used to implement batch sequential | True….
+# RPG is widely used to implement batch sequential | Trueï¿½.
 # Event-based architecture style is a buffered architecture | False 
-# Only directly adjacent layers can invoke each other’s methods in a layered architecture. | False 
+# Only directly adjacent layers can invoke each otherï¿½s methods in a layered architecture. | False 
 # Java can be used to implement a pipe and filter design system. | True 
 # The control flow in batch sequential is implicit. | True 
 # The following image is an example of one of architecture style below. Which is the best choice?|Process-Control architecture
 # In Thin-client type, the server includes which  of the following processing | Data storage processing, Business Logic Processing
 # Implicit notification is often used in blackboard architecture. | True 
 # The control flow in pipe and filter is explicit. | True 
-# FPT’s University CMS is an example of repository design | True
+# FPTï¿½s University CMS is an example of repository design | True
 # The master-slave architecture is a specialized form of main-subroutine architecture | True
 # In Fat-client type, the client includes which  of the following processing | Presentation processing, Business Logic Processing
 # Repository architecture design could NOT be object-oriented design | True
@@ -422,7 +422,7 @@
 # Multiple event targets can register with same event source. | True
 # Hierarchical architecture is a procedure-oriented design paradigm only.False
 # Sequential flow control can be predetermined in pipe and filter. |True
-# Which of the following is not an open-close principles’s implication? | Feel free to change software code.
+# Which of the following is not an open-close principlesï¿½s implication? | Feel free to change software code.
 # Architecture design is about choosing the right single architecture style for a project | False
 # Software quality attributes must satisfy functional requirements | False
 # UML diagrams are used for system analysis and design | True
@@ -431,7 +431,7 @@
 # Which of the following are considered as implementation attributes? | Interoperability, maintainability, portability, flexibility
 # Which of the following notations is used to support the logical view? | All of the others
 # Pipe-and-Filter is one of the architecture styles  | True
-# In a sequence diagram, boxes on top of the diagram can represent classes, objects, and actors. We found a description of a box as follow “John:Doctor”. Which of the following is correct expression? | An object named “John” whose class is “Doctor”
+# In a sequence diagram, boxes on top of the diagram can represent classes, objects, and actors. We found a description of a box as follow ï¿½John:Doctorï¿½. Which of the following is correct expression? | An object named ï¿½Johnï¿½ whose class is ï¿½Doctorï¿½
 # In UML 2.0 Which of the following is true? | Sequence diagram both concurrencies and loops can be specified
 # Which of the following diagram is NOT an structural diagram | Sequence diagram
 # The purpose of the software design phase is to product a software requirement specification|False
@@ -443,7 +443,7 @@
 # Which are the categories of operations that a class can provide? | Constructor, Destructor, Accessor, Mutator
 # Which of the following are considered as Runtime attributes | Availability, Security, Performance, Usabilty
 # Object-oriented design is a design methodology | True
-# Which view in “4+1” view model identifies software module and their boundaries, interfaces, external environment usage senarios, etc. | Logical view
+# Which view in ï¿½4+1ï¿½ view model identifies software module and their boundaries, interfaces, external environment usage senarios, etc. | Logical view
 # Which of the following is a feature of object oriented methodology? | Inheritance
 # Which is NOT a structure which can be described in a software architecture? | Operation structure
 # Architecture styles contribute to software quality attributes | True
@@ -458,7 +458,7 @@
 # Which of the following is NOT a typical style of distributed architecture? | MVC
 # In SOA architecture, Interperability means what? | Technically any client or any services regardless of their Platform, Technology, Vendors, Language implementations
 # Event-based architecture is appropriate for a compiler in an IDE design | False
-# The image below is an example of static style of user interce’slaout? Which which is the correct answer? | It’s 1D layout
+# The image below is an example of static style of user interceï¿½slaout? Which which is the correct answer? | Itï¿½s 1D layout
 # The abstraction and presentation components in a PAC agent do not talk to each other directly|True
 # The PAC architecture is a hierarchically structured software architecture | True
 # There is always only one architecture design that can meet all requirements | False
@@ -534,7 +534,7 @@
 # Web service is an example of hierarchy architecture design. | True.
 # Hierarchical architecture is a procedure-oriented design paradigm only. | False.
 # Hierarchical architecture can also be applied in any object-oriented software design. | True.
-# Only directly adjacent layers can invoke each other’s methods in a layered architecture. | False.
+# Only directly adjacent layers can invoke each otherï¿½s methods in a layered architecture. | False.
 # Component deployment is a good practice in a layered architecture. | True.
 # There is data sharing between all layers in a layered architecture. | False.
 # The callback method is typically used in a main-subroutine architecture. | False.
@@ -563,7 +563,7 @@
 # Event-based architecture is a good candidate for interactive systems with graphic user interface.| True.
 # Blackboard architecture is difficult to debug. | True.
 # A user interface is mainly for accepting inputs, conducting computations, and displaying outputs. | False.
-# Chapter 3 of this book, on “models for software architecture,” has nothing to do with user interfaces described in this chapter. | False.
+# Chapter 3 of this book, on ï¿½models for software architecture,ï¿½ has nothing to do with user interfaces described in this chapter. | False.
 # User interface refers to static components and their layout, not dynamically displayed information. | False.
 # The MVC models suggest the separation of the user interface from the logic of the software system? | True.
 # The look and feel of a user interface can be defined by using engineering rules. | False.
@@ -685,7 +685,7 @@ QN=30 (10400)Data store reliability and availability are limitations of which ar
 QN=31 (10374)Which of the following is the benefit of Blackboard Architecture? | Concurrency
 QN=32 (10429)In DFD, the follow image is a representation of which flow? | Transaction flow
 QN=33 (10409)Which of the following is NOT the limitation of layered architecture? | Incremental software development based on increasing levels of abstraction.
-QN=34 (10437)With an application that has clean divisions between core services, critical services, user interface services…. Which architecture style will you apply? | Layered architecture
+QN=34 (10437)With an application that has clean divisions between core services, critical services, user interface servicesï¿½. Which architecture style will you apply? | Layered architecture
 QN=35 (10441)A virtual machine provides _____. Which is the best choice to fill into the blank? | A virtual abstraction
 QN=36 (10415)Which of the following is the limitation of virtual machine architecture? | Overhead due to the new layer
 QN=37 (10450)The limitation of message-driven architecture over event-driven architecture is which of the following? | Capacity of message queue.
@@ -831,7 +831,7 @@ Which of the following is one of the benefits of asynchronous architecture? | Lo
 Which of the following is the limitation of Repository Architecture Style? | High dependency between data structure of data store and its agents.
 Which of the following is the limitation of Repository Architecture Style? | Overhead cost of moving data on network if data is distributed..
 You will apply the batch sequential architecture when? | Developing a system where intermediate file is a sequential access file.
-1.Evaluating the scalability of architecture styles, Which is the right order of scalability of distributed architecure styles? (“>” is better) | Client-Server > Broker > Service-oriented
+1.Evaluating the scalability of architecture styles, Which is the right order of scalability of distributed architecure styles? (ï¿½>ï¿½ is better) | Client-Server > Broker > Service-oriented
 2.What of the following statement about the characteristic in Service-oriented and Broker are CORRECT? | Both are hard to test and debug.
 3.Which of the following statement is TRUE? | Three-tier is the same as MVC architecture.
 4.Which of the below description is a benefit of PAC architecture style? | Complete sepatation of presentation and abstraction
@@ -854,7 +854,7 @@ You will apply the batch sequential architecture when? | Developing a system whe
 (2): Determine the re required quality attributes in requirement analysis 
 (3): Compute the weighted sum 
 Which is the correct order of these steps? | 2 => 1 => 3
-20.Which is the statement you can describe about PAC architecture syle? | PAC’s Agents are loose coupling and high independent.
+20.Which is the statement you can describe about PAC architecture syle? | PACï¿½s Agents are loose coupling and high independent.
 21.Which of the following is the main motivation of Component-based architecture? | Component reusability
 22.The key point of the interaction oriented software architectures is ___ Which is the best answer? | In the separation of user interactions from data abstraction and business data processing.
 23.The following image is an example of one of architecture style below. Which is the best choice? | Multi-tier Architecture style
@@ -864,14 +864,14 @@ Which is the correct order of these steps? | 2 => 1 => 3
 27.Which of the following attribute related to error tolerance and availability? | Reliability
 28.Which of the following is TRUE about heterogeneous architecture? | If the general structure of a system is connected using one architeture style, and each component can use a different one, this is an example of heterogeneous architecture
 29.Which is the reason when you apply component-based architecture, overall reliability will be increased? | You could increase the reliability of each individual component in your own way.
-30.Evaluating the abstraction of software development methodogy, Which is the right order? (“>” is higher) | Service-based > Component-based > Object-oriented > Functional-oriented
+30.Evaluating the abstraction of software development methodogy, Which is the right order? (ï¿½>ï¿½ is higher) | Service-based > Component-based > Object-oriented > Functional-oriented
 31.Which of the following attribute related to hardware independence and installability? | Portability
 32.In SOA architecture, Interoperability means what? | Technically any client or any service can access other services redardless of their Plaform, Technology, Vendors, Language implementations
 33.In Client-Server architecure style, ther are follow types | Thin-Client, Fat-Client
 34.Which of the followings is a style of distributed architecture? | Service Oriented architecture
 35.In MVC, said that it is easy to plug-in new or change interface views mean which of the following? | It allows updating the interface views with new technologies without overhang the rest of the system
 36.Which of the following is NOT the benefit of Multi-tier architecture style? | Load balancing
-37.When you are request to maker a system which can be used be users who work on different sites. It’s required that the system security attribute is high because of its working domain requirement. There are about 100.000 to 500.000 users using the system at the same time. Which architecture will you choose to apply for the system development? | Component-based architecture style
+37.When you are request to maker a system which can be used be users who work on different sites. Itï¿½s required that the system security attribute is high because of its working domain requirement. There are about 100.000 to 500.000 users using the system at the same time. Which architecture will you choose to apply for the system development? | Component-based architecture style
 38.What of the following characteristic do MVC and PAC both have? | Support fot developing interactive application
 39.Which of the below description is a limitation of MVC architecture sytle? | Does not fit well agent-oriented applications such as interactive mobile and robotics applications
 40.A component is NOT ___. Which is the best choice? | A whole system which could be executed independent.
@@ -881,13 +881,13 @@ Which is the correct order of these steps? | 2 => 1 => 3
 4.Architecture styles contribute to software quality attributes | true
 5.Which of the following notations is used to support the physical view? | none of the others
 6.Which of the following are considered as Runtime attributes | availability, security, performance, usability
-7.In a sequence diagram, boxes on top of the diagram can represent classes, objects, and actors. We found a description of a box as follow “Human:Player”, which of the following is correct expression? | an object named “Human” whose class is “Player”
+7.In a sequence diagram, boxes on top of the diagram can represent classes, objects, and actors. We found a description of a box as follow ï¿½Human:Playerï¿½, which of the following is correct expression? | an object named ï¿½Humanï¿½ whose class is ï¿½Playerï¿½
 8.Time to market belongs to which of the following quality attributes group? | Business atttributes 
 9. In a software architecture, a process, object, service or an instance of software component is ___ | A software element
 10.UML diagrams are ___ which are used for system analysis and design | Tools
 11.Which of the following is NOT TRUE about Architectural design step? | we will specify the internal details of each component
 12.Which of the following notations is used to support the process view? | Activity diagram 
-13.Which of the design below is better? | b (hình nhìn don gi?n hon)
+13.Which of the design below is better? | b (hï¿½nh nhï¿½n don gi?n hon)
 14.Which of the following is a principle of Object Oriented methodology? | Polymorphism
 15.Which of the following are considered as Implementation attributes? | Interoperability, Maintainability, Portability, Flexibility
 16.Which of the following diagram is a Structural diagram | class diagram
@@ -900,7 +900,7 @@ Which is the correct order of these steps? | 2 => 1 => 3
 23.The purpose of the software analysis phase is to produce a software requirement specification | true //
 24.Software Architecture Design is based on the software requirement | true
 25.The CRC card method is used to identify the responsibilities of each class | true 
-26.Which of the following is not an Open-Close principle’s implication? | Fell free to change software code
+26.Which of the following is not an Open-Close principleï¿½s implication? | Fell free to change software code
 27.Architects use __ in software construction to divide and conquer the complexities of a problem domain to solve the problem. | various design strategies 
 28.Abstraction via inheritance is one effective way to achieve the open-close principle | true
 29.Architect design is about choosing the right single architecture style for a project | false
@@ -908,17 +908,17 @@ Which is the correct order of these steps? | 2 => 1 => 3
 31.What is an architecture design space? | design alternatives that can support functional and non-functional requirement specifications. 
 32.Which is NOT a structure which can be described in a software architecture? | operation structure
 33.Which of the following structures describes the dynamic properties of software architecture? | software runtime structure
-34.Based on connector’s information carrier, the connectors in software architecture might be classification into __ | variable, environment resource, method, message
+34.Based on connectorï¿½s information carrier, the connectors in software architecture might be classification into __ | variable, environment resource, method, message
 35.At software development time, the software element are __? | Source code modules or files which have been assigned functional and non-functional attributes.
 36.Which of the following is NOT TRUE about Detailed design step? | We will describe user accessible components only in this step.
 37.Polymorphism implies the following: | All of others
-38.Which view in “4+1” view model identifies software modules and their boundaries, interfaces, external environment, usage scenarios, etc. | logical view 
+38.Which view in ï¿½4+1ï¿½ view model identifies software modules and their boundaries, interfaces, external environment, usage scenarios, etc. | logical view 
 39.Batch-Sequence is one of the architecture styles | true
 40.In UML 2.0, which of the following is true? | sequence diagram describes time sequence of messages pass between objects in timeline.	
-1.Activity diagrams are used to support…… | The process view
+1.Activity diagrams are used to supportï¿½ï¿½ | The process view
 2.With a good software design, which is benefit we will get? |	It leads the risk in software production more serious
 3.Which of the following is advantage of broker architecture? | Changeability and extensibility
-4.The outcome of Object Oriented Analysis stage are… | Requirement Specification, Initial logic structure of the system
+4.The outcome of Object Oriented Analysis stage areï¿½ | Requirement Specification, Initial logic structure of the system
 5.Which of the following if limitation of Non-buffered Event-Based architecture? |	Reliability and overhead of indirect invocations
 6.Package diagram is grouped in which of following UML diagram category? |	Structure diagram
 7.The Architectural Decision Procedure includes  following steps |1.Determine the required quality attributes in requirement analysis 2.Quantify the quality attributes 3.Compute the weighted sum
@@ -929,7 +929,7 @@ Which is the correct order of these steps? | 2 => 1 => 3
 12.Which of the following is NOT benefit of distributed architecture? | Supports multiple independent argents
 13.Which of the following architecture is suitable for the embedded system software design? |	Pipe and filter architecture 
 14.When you are requested to develop a Radar software system, a Traffic management system, etc, which of the following architecture is the best suitable for development? | PAC architecture
-15.Which of the perspective where the connectors in software architecture might be classification into 4 types: Variable, environment resource, method, message? | Based on connector’s information carrier
+15.Which of the perspective where the connectors in software architecture might be classification into 4 types: Variable, environment resource, method, message? | Based on connectorï¿½s information carrier
 16.ATAM is which of the following methods? | Architecture Trace-off Analysis Method
 17.Repository architecture and Backboard architecture is categorized into which of the following architecture style? |	Data-centered architecture style
 18.The below image is a snapshot of which architecture styles following? |	MVC architecture
@@ -946,11 +946,11 @@ Which is the correct order of these steps? | 2 => 1 => 3
 30.Which of the following is a limitation of component architecture? | Adaption of components
 31.The acronym SAPCO is used  for which of following purpose? | Describing the Easy to use attribute of user interfaces
 32.Which of the following guides is NOT the guideline for mapping runtime elements in a software architecture design? | If the two elements are mapped to a single process, the connector could be mapped to local method invocation.
-33.Polymorphism principles mean that…. | An object can have different appearance/behaviors under difference circumstances
+33.Polymorphism principles mean thatï¿½. | An object can have different appearance/behaviors under difference circumstances
 35.Compared with SOA, the advantage of SBA is which of the following? | Allows stateful service
 36.Which of the following is NOT an architecture style in hierarchical architecture? | Client-Server architecture
 37.Which of the following is NOT a buffer- based software architecture | Peer-to-peer connection
-39.Which of the following is an Open-Close principle’s implication? |	Keep attributes private
+39.Which of the following is an Open-Close principleï¿½s implication? |	Keep attributes private
 1.Which of the following is NOT the benefit of multi-tier architecture style? | Load balancing (correct)
 2.Event-based architecture is difficult to test and debug | True (correct)
 3.Main- subroutine architecture can also be applied in any object-oriented software design | False
@@ -960,9 +960,9 @@ Which is the correct order of these steps? | 2 => 1 => 3
 7.The following image is an example of one of architecture style below. Which is the best choice? | Multi-tier Architecture Style (correct)
 8.Sequential flow control can be predetermined in batch sequential. | True (correct)
 9.Facts are installed in the Blackboard component of the Blackboard architecture? | True(correct)
-10.RPG is widely used to implement batch sequential | True….
+10.RPG is widely used to implement batch sequential | Trueï¿½.
 11.Event-based architecture style is a buffered architecture | False (correct)
-12.Only directly adjacent layers can invoke each other’s methods in a layered architecture. | False (correct)
+12.Only directly adjacent layers can invoke each otherï¿½s methods in a layered architecture. | False (correct)
 13.Java can be used to implement a pipe and filter design system. | True (correct)
 14.The control flow in batch sequential is implicit. | True (correct)
 15.The following image is an example of one of architecture style below. Which is the best choice? | Process-Control architecture
@@ -1032,14 +1032,14 @@ Which is the correct order of these steps? | 2 => 1 => 3
 51.Which are the categories of operations that a class can provide? |	Constructor, Destructor, Accessor, Mutator
 52.Polymorphism implies the following: |	All of the others 
 53.Which of the following are considered as Runtime attribute? | Availability, Security, Perfomance, Usability
-54.Which of the following is not an Open-Closed principle’s implication? | Feel free to change software code
+54.Which of the following is not an Open-Closed principleï¿½s implication? | Feel free to change software code
 55.What is a class involved in accomplishing the responsibility of a class called in CRC modeling? |	Collaborator
 56.Which of the following diagram is NOT an structural diagram |	Sequence diagram
 57.In UML 2.0 Which of the following is true? | Sequence Diagram both concurencies and loops can be specified
-58.In a sequence diagram, boxes on top of the diagram can represent classes, objects and actors. We found a description of a box as follow “John:Doctor”. Which of the following is correct expression? | 	An object named “John” whose class is “Doctor”
+58.In a sequence diagram, boxes on top of the diagram can represent classes, objects and actors. We found a description of a box as follow ï¿½John:Doctorï¿½. Which of the following is correct expression? | 	An object named ï¿½Johnï¿½ whose class is ï¿½Doctorï¿½
 59.Which of the following is Open-Closed principle? | Open to extension, Close to modification
 60.Which is not a structure which can be described in a software architecture? |	Operation structure
-61.Which view in “4+1” view model identifies software modules and their boundaries, interfaces, external environment, usage scenarios, etc |	Logicalview
+61.Which view in ï¿½4+1ï¿½ view model identifies software modules and their boundaries, interfaces, external environment, usage scenarios, etc |	Logicalview
 64.COBOL is widely used to implement batch sequential? | True
 65.Two modules in a data flow system can change their order without any constraints | False
 66.Java can be used to implement a pipe and filter design system | True
@@ -1119,7 +1119,7 @@ Which is the correct order of these steps? | 2 => 1 => 3
 3.Web service is an example of hierarchy architecture design | True
 4.Hierarchical architecture is  a procedure-oriented design paradigm only  |  False
 5.Hierarchical architecture can also be applied in any object-oriented software design | True
-6.Only directly adjacent layers can invoke each other’s methods in a layered architecture | False
+6.Only directly adjacent layers can invoke each otherï¿½s methods in a layered architecture | False
 7.Component deployment is a good practice in a layered architecture | True
 8.There is data sharing between all layers in a layered architecture | False
 9.The callback method is typically used in a main-subroutine architecture | False
@@ -1150,7 +1150,7 @@ Which is the correct order of these steps? | 2 => 1 => 3
 6.The data in the abstraction component of a PAC agent is passive | True
 7.PAC agents are loosely coupled | True
 8.The abstraction and presentation components in a PAC agent do not talk to each other directly | True
-9.The “Look and feel” feature is well supported in the MVC | True
+9.The ï¿½Look and feelï¿½ feature is well supported in the MVC | True
 10.The PAC architecture is a hierarchically structured software architecture | True
 1.Which of the following is not one of the benefits of distributed architecture?
 a.Supports multiple independent agents
@@ -1186,7 +1186,7 @@ d.SOA
 9.Event-based architecture is a good candidate for interactive systems with graphic user interface | True
 10.Blackboard architecture is difficult to debug | True
 1.A user interface is mainly for accepting inputs, conducting computations, and displaying outputs | False
-2.Chapter 3 of this book, on “models for software architecture”, has nothing to do with user interfaces described in this chapter. | False
+2.Chapter 3 of this book, on ï¿½models for software architectureï¿½, has nothing to do with user interfaces described in this chapter. | False
 3.User interface refers to static components and their layout, not dynamically displayed information. | False
 4.The MVC model suggests the separation of the user interface from the logic of the software system. | True
 5.Which of the following is true for implementing the separation of the user interface from the logic of the software system? |	All
@@ -1195,7 +1195,7 @@ d.SOA
 8.The usability of a user interface is enhanced by consistency and integration | True
 9.The acronym SAPCO describes | The satisfactory principles of user interfaces
 10.The Java programming language supports graphical user interface components, layout managers, and event listeners, all needed for designing and implementing user interfaces  | True
-1.The constituent parts of the architecture of a system are” | Its components, connectors, and the rules governing their interactions
+1.The constituent parts of the architecture of a system areï¿½ | Its components, connectors, and the rules governing their interactions
 2.Domain analysis identifies the various common features in a domain and their differences | True
 3.Control-of-variability forms the basis for reusability and standardization by identifying those crosscutting aspects that are typically present in the systems in a given domain | False
 4.Product line processes are a way to institutionalize systematic reuse | False
@@ -1211,16 +1211,16 @@ d.SOA
 2.  The below image is a snapshot of which architecture styles following? | Repository architecture
 3. When you are requested to develop a Radar software system, a Traffic management system, et cetera, which of the following architecture is the best suitable for development? | PAC Architecture
 4. Which of the following architecture is suitable for the embedded system software design? | Process-Control Architecture
-5. Which of the following is an Open-Close principle’s implication? | Separate interface and implementation
+5. Which of the following is an Open-Close principleï¿½s implication? | Separate interface and implementation
 6. Design produces architecture that specify products and components in the form of Which of the following? | A detail-level design solution
 7. Which of following is one limitation of Client/Server architecture? | Server availability and reliability
 8. Which of the following is the limitation of Repository Architecture Style? | Data store reliability and availability is a very important issue.
-9. Based on connector’s information carrier, the connectors in software architecture might be classification into ____________ | Variable, Environment resource, Method, Message
+9. Based on connectorï¿½s information carrier, the connectors in software architecture might be classification into ____________ | Variable, Environment resource, Method, Message
 10. Which of the following guides is NOT the guideline for mapping runtime elements in a software architecture design? | If the two elements are mapped to a single process, the connector could be mapped to a local method invocation.
 11. Which of the following diagram called? | Sequence diagram
 12. Polymorphism principles means that_______ | An object can have different appearance/behaviors under different circumstances.
 13. Which of the following is NOT the benefit of distributed architecture? | Testability
-14. Which of the following is a limitation of Non-Buffered Event-based architecture? |  Reliability and overhead ò indirect invocations
+14. Which of the following is a limitation of Non-Buffered Event-based architecture? |  Reliability and overhead ï¿½ indirect invocations
 15. Which of the following are considered as Business attributes? | Time to market, Lifetime, Cost
 16. When will you apply the Process-Control architecture? | Developing a system which needs to maintain an output data at a stable level.
 17. The constituent parts of the architecture of a system are which of the following? | Its components, connectors, and the rules governing their interactions.
@@ -1326,7 +1326,7 @@ d.SOA
 # Rule-based knowledge is installed in the __ component of the blackboard architecture | Control
 # In an architecture styles, which of the following is the components defining how elements can be integrated to form the system | Constraints
 # The below image is a snapshot of which architecture style belowing? (View, A View 1, A View 2, ..) | MVC architecture
-# ‘A’ character in “SAPCO” is which of the following? | Aesthetic
+# ï¿½Aï¿½ character in ï¿½SAPCOï¿½ is which of the following? | Aesthetic
 # Which is the following diagram called? (customer, shipping, payment) | Package Diagram
 # Which of the followings is a style of distributed architecture? | Multi-tier architecture
 # Choose the correct statement | Runtime connector in software runtime structure inherit attributes from source code structure without any extension
@@ -1405,12 +1405,12 @@ d.SOA
 #There is always an architecture design that can meet all requirements FALSE 
 #Batch sequential architecture is generally more time efficient than pipe and false 
 #A user interface is mainly for accepting inputs, conducting computations, and displaying outputs False 
-#Chapter 3 of this book, on “models for software architecture”, has nothing to do with user interfaces described in this chapter False 
+#Chapter 3 of this book, on ï¿½models for software architectureï¿½, has nothing to do with user interfaces described in this chapter False 
 #Which of the following is true for implementing the separation of the user interface from the logic of the software system All 
 #The look and feel of a user interface can be defined by using engineering rules False 
 #customizable user interface is not a good style since it will confuse users False 
 #The acronym SAPCO describes The satisfactory principles of user interfaces 
-#The constituent parts of the architecture of a system are” Its components, connectors, and the rules governing their interactions 
+#The constituent parts of the architecture of a system areï¿½ Its components, connectors, and the rules governing their interactions 
 #Control-of-variability forms the basis for reusability and standardization by identifying those crosscutting aspects that are typically present in the systems in a given domain False 
 #Product line processes are a way to institutionalize systematic reuseFalse  FALSE 
 #Design-for-commonality anticipates variation without compromising commonality False 
@@ -1421,16 +1421,16 @@ d.SOA
 #The below image is a snapshot of which architecture styles following Repository architecture 
 #When you are requested to develop a Radar software system, a Traffic management system, et cetera, which of the following architecture is the best suitable for development PAC Architecture 
 #Which of the following architecture is suitable for the embedded system software design Process-Control Architecture 
-#Which of the following is an Open-Close principle’s implication Separate interface and implementation 
+#Which of the following is an Open-Close principleï¿½s implication Separate interface and implementation 
 #Design produces architecture that specify products and components in the form of Which of the following A detail-level design solution 
 #Which of following is one limitation of ClientServer architecture Server availability and reliability 
 #Which of the following is the limitation of Repository Architecture Style Data store reliability and availability is a very important issue. 
-#Based on connector’s information carrier, the connectors in software architecture might be classification into Variable, Environment resource, Method, Message 
+#Based on connectorï¿½s information carrier, the connectors in software architecture might be classification into Variable, Environment resource, Method, Message 
 #Which of the following guides is NOT the guideline for mapping runtime elements in a software architecture design If the two elements are mapped to a single process, the connector could be mapped to a local method invocation. 
 #Which of the following diagram called Sequence diagram 
 #Polymorphism principles means that An object can have different appearancebehaviors under different circumstances 
 #Which of the following is NOT the benefit of distributed architecture Testability 
-#Which of the following is a limitation of Non-Buffered Event-based architecture Reliability and overhead ò indirect invocations 
+#Which of the following is a limitation of Non-Buffered Event-based architecture Reliability and overhead ï¿½ indirect invocations 
 #Which of the following are considered as Business attributes . Time to market, Lifetime, Cost 
 #When will you apply the Process-Control architecture Developing a system which needs to maintain an output data at a stable level. 
 #The constituent parts of the architecture of a system are which of the following Its components, connectors, and the rules governing their interactions. 
@@ -1498,7 +1498,7 @@ d.SOA
 #Which of the following is the benefit of Blackboard Architecture  Concurrency
 #In DFD, the follow image is a representation of which flow  Transaction flow
 #Which of the following is NOT the limitation of layered architecture  Incremental software development based on increasing levels of abstraction
-#With an application that has clean divisions between core services, critical services, user interface services…. Which architecture style will you apply  Layered architecture
+#With an application that has clean divisions between core services, critical services, user interface servicesï¿½. Which architecture style will you apply  Layered architecture
 #A virtual machine provides _____. Which is the best choice to fill into the blank  A virtual abstraction
 #Which of the following is the limitation of virtual machine architecture  Overhead due to the new layer
 #The limitation of message-driven architecture over event-driven architecture is which of the following  Capacity of message queue
@@ -1536,14 +1536,14 @@ d.SOA
 # Facts are installed in the Blackboard component of the Blackboard architectureTrue 
 # RPG is widely used to implement batch sequentialTrue 
 # Event-based architecture style is a buffered architectureFalse 
-# Only directly adjacent layers can invoke each other’s methods in a layered architecture.False 
+# Only directly adjacent layers can invoke each otherï¿½s methods in a layered architecture.False 
 # Java can be used to implement a pipe and filter design systemTrue 
 # The control flow in batch sequential is implicit.True 
 # The following image is an example of one of architecture style below. Which is the best choiceBProcess-Control architecture 
 # In Thin-client type, the server includes which of the following processingData storage processing, Business Logic Processing 
 # Implicit notification is often used in blackboard architectureTrue 
 # The control flow in pipe and filter is explicitTrue 
-# FPT’s University CMS is an example of repository designTrue 
+# FPTï¿½s University CMS is an example of repository designTrue 
 # The master-slave architecture is a specialized form of main-subroutine architectureTrue 
 # In Fat-client type, the client includes which of the following processingPresentation processing, Business Logic Processing 
 # Repository architecture design could NOT be object-oriented designTrue 
@@ -1554,7 +1554,7 @@ d.SOA
 # Two modules in a data flow system can change their order without any constrains.False 
 # Multiple event targets can register with same event sourceTrue 
 # Sequential flow control can be predetermined in pipe and filter.True 
-# Which of the following is not an open-close principles’s implicationFeel free to change software code. 
+# Which of the following is not an open-close principlesï¿½s implicationFeel free to change software code. 
 # Architecture design is about choosing the right single architecture style for a projectFalse 
 # Software quality attributes must satisfy functional requirementsFalse 
 # UML diagrams are used for system analysis and designTrue 
@@ -1563,7 +1563,7 @@ d.SOA
 # Which of the following are considered as implementation attributesInteroperability, maintainability, portability, flexibility 
 # Which of the following notations is used to support the logical viewAll of the others(Sequence,State,Colla) 
 # Pipe-and-Filter is one of the architecture stylesTrue 
-# In a sequence diagram, boxes on top of the diagram can represent classes, objects, and actors. We found a description of a box as follow “JohnDoctor”. Which of the following is correct expressionAn object named “John” whose class is “Doctor” 
+# In a sequence diagram, boxes on top of the diagram can represent classes, objects, and actors. We found a description of a box as follow ï¿½JohnDoctorï¿½. Which of the following is correct expressionAn object named ï¿½Johnï¿½ whose class is ï¿½Doctorï¿½ 
 # In UML 2.0 Which of the following is trueSequence diagram both concurrencies and loops can be specified 
 # Which of the following diagram is NOT an structural diagramSequence diagram 
 # The purpose of the software design phase is to product a software requirement specificationTrue 
@@ -1574,7 +1574,7 @@ d.SOA
 # Which are the categories of operations that a class can provideConstructor, Destructor, Accessor, Mutator 
 # Which of the following are considered as Runtime attributesAvailability, Security, Performance, Usabilty 
 # Object-oriented design is a design methodologyTrue 
-# Which view in “4+1” view model identifies software module and their boundaries, interfaces, external environment usage senarios, etc.Logical view 
+# Which view in ï¿½4+1ï¿½ view model identifies software module and their boundaries, interfaces, external environment usage senarios, etc.Logical view 
 # Which of the following is a feature of object oriented methodologyInheritance 
 # Which is NOT a structure which can be described in a software architectureOperation structure 
 # Architecture styles contribute to software quality attributesTrue 
@@ -1589,7 +1589,7 @@ d.SOA
 # Which of the following is NOT a typical style of distributed architectureMVC 
 # In SOA architecture, Interperability means whatTechnically any client or any services regardless of their Platform, Technology, Vendors, Language implementations 
 # Event-based architecture is appropriate for a compiler in an IDE designFalse 
-# The image below is an example of static style of user interce’slaout Which which is the correct answerIt’s 1D layout 
+# The image below is an example of static style of user interceï¿½slaout Which which is the correct answerItï¿½s 1D layout 
 # The abstraction and presentation components in a PAC agent do not talk to each other directlyTrue 
 # The PAC architecture is a hierarchically structured software architectureTrue 
 # There is always only one architecture design that can meet all requirementsTrue 
@@ -1663,7 +1663,7 @@ d.SOA
 # Web service is an example of hierarchy architecture design.True 
 # Hierarchical architecture is a procedure-oriented design paradigm only.False 
 # Hierarchical architecture can also be applied in any object-oriented software design.True 
-# Only directly adjacent layers can invoke each other’s methods in a layered architecture.False 
+# Only directly adjacent layers can invoke each otherï¿½s methods in a layered architecture.False 
 # Component deployment is a good practice in a layered architecture.True 
 # There is data sharing between all layers in a layered architecture.False 
 # The callback method is typically used in a main-subroutine architecture.False 
@@ -1690,7 +1690,7 @@ d.SOA
 # Event-based architecture is a good candidate for interactive systems with graphic user interface.True 
 # Blackboard architecture is difficult to debug.True 
 # A user interface is mainly for accepting inputs, conducting computations, and displaying outputs.False 
-# Chapter 3 of this book, on “models for software architecture,” has nothing to do with user interfaces described in this chapter.False 
+# Chapter 3 of this book, on ï¿½models for software architecture,ï¿½ has nothing to do with user interfaces described in this chapter.False 
 # User interface refers to static components and their layout, not dynamically displayed information.False 
 # The MVC models suggest the separation of the user interface from the logic of the software systemTrue 
 # The look and feel of a user interface can be defined by using engineering rules.False 
@@ -1968,7 +1968,7 @@ d.SOA
 #Divide-and-conquer is not a suitable methodology for architecture design  False 
 #Element and connector attributes are derived from the project  True 
 #Hierarchical architecture is a procedure-oriented design paradigm only  False 
-#In a sequence diagram, boxes on top of the diagram can represent classes, objects and actors. We found a description of a box as follow “JohnDoctor”. Which of the following is correct expression  An object named “John” whose class is “Doctor” 
+#In a sequence diagram, boxes on top of the diagram can represent classes, objects and actors. We found a description of a box as follow ï¿½JohnDoctorï¿½. Which of the following is correct expression  An object named ï¿½Johnï¿½ whose class is ï¿½Doctorï¿½ 
 #In UML 2.0 Which of the following is true  Sequence Diagram both concurencies and loops can be specified 
 #Message-based architecture is appropriate for a compiler in an IDE design  False 
 #Object-oriented design is a design methodology  True 
@@ -2025,7 +2025,7 @@ d.SOA
 #Which of the following is not a benefit of the MVC architecture  Supports multiple independent agents 
 #Which of the following is not a typical style of distributed architecture  Hierarchical architecture 
 #Which of the following is not a typical style of distributed architecture  Hierarchical structure 
-#Which of the following is not an Open-Closed principle’s implication  Feel free to change software code 
+#Which of the following is not an Open-Closed principleï¿½s implication  Feel free to change software code 
 #Which of the following is not one of the benefits of distributed architecture  Supports multiple views 
 #Which of the following is not one of the benefits of distributed architecture  Supports multiple views 
 #Which of the following is one of the benefits of asynchronous architecture  Loose coupling of modules 
@@ -2037,11 +2037,11 @@ d.SOA
 #Which of the following structures describe the dynamic properties of software architecture  Software runtime structure 
 #Which of the followings are not benefits of batch sequential  Interactive 
 #Which of the followings is not typical design domain of the asynchronous architecture  Hierarchical structure 
-#Which view in “4+1” view model identifies software modules and their boundaries, interfaces, external environment, usage scenarios, etc  Logicalview 
-#Activity diagrams are used to support……  The process view 
+#Which view in ï¿½4+1ï¿½ view model identifies software modules and their boundaries, interfaces, external environment, usage scenarios, etc  Logicalview 
+#Activity diagrams are used to supportï¿½ï¿½  The process view 
 #With a good software design, which is benefit we will get  It leads the risk in software production more serious 
 #which of the following is advantage of broker architecture  Changeability and extensibility 
-#The outcome of Object Oriented Analysis stage are…  Requirement Specification, Initial logic structure of the system 
+#The outcome of Object Oriented Analysis stage areï¿½  Requirement Specification, Initial logic structure of the system 
 #Which of the following if limitation of Non-buffered Event-Based architecture Reliability and overhead of indirect invocations 
 #Package diagram is grouped in which of following UML diagram category Structure diagram 
 #Design produces architectures that specify products and components in the form of which of the following A detail-level design solution 
@@ -2050,7 +2050,7 @@ d.SOA
 #Which diagram equivalent to a sequence diagram  Collaboration diagram 
 #Which of the following is NOT benefit of distributed architecture  Supports multiple independent argents 
 #When you are requested to develop a Radar software system, a Traffic management system, etc, which of the following architecture is the best suitable for development PAC architecture 
-#Which of the perspective where the connectors in software architecture might be classification into 4 types Variable, environment resource, method, message  Based on connector’s information carrier 
+#Which of the perspective where the connectors in software architecture might be classification into 4 types Variable, environment resource, method, message  Based on connectorï¿½s information carrier 
 #ATAM is which of the following methods  Architecture Trace-off Analysis Method 
 #Repository architecture and Backboard architecture is categorized into which of the following architecture style  Data-centered architecture style 
 #The below image is a snapshot of which architecture styles following  MVC architecture 
@@ -2068,18 +2068,18 @@ d.SOA
 #Which of the following is a limitation of component architecture  Adaption of components 
 #The acronym SAPCO is used for which of following purpose  Describing the Easy to use attribute of user interfaces 
 #Which of the following guides is NOT the guideline for mapping runtime elements in a software architecture design  If the two elements are mapped to a single process, the connector could be mapped to local method invocation 
-#Polymorphism principles mean that….  An object can have different appearancebehaviors under difference circumstances 
+#Polymorphism principles mean thatï¿½.  An object can have different appearancebehaviors under difference circumstances 
 #Compared with SOA, the advantage of SBA is which of the following  Allows stateful service 
 #Which of the following is NOT an architecture style in hierarchical architecture  Client-Server architecture 
 #Which of the following is NOT a buffer- based software architecture  Peer-to-peer connection 
-#Which of the following is an Open-Close principle’s implication  Keep attributes private 
+#Which of the following is an Open-Close principleï¿½s implication  Keep attributes private 
 #Which of the following is NOT the benefit of multi-tier architecture style  Load balancing 
 #Main- subroutine architecture can also be applied in any object-oriented software design  False 
 #In Client-Server architecture style, there are follow types  Thin-client, Fat-client 
 #Client-server architecture is general is better availability than the multi-tier model  False 
 #The following image is an example of one of architecture style below. Which is the best choice  Multi-tier Architecture Style 
 #Event-based architecture style is a buffered architecture  False 
-#Only directly adjacent layers can invoke each other’s methods in a layered architecture  False 
+#Only directly adjacent layers can invoke each otherï¿½s methods in a layered architecture  False 
 #The following image is an example of one of architecture style below. Which is the best choice Process-Control architecture 
 #In Thin-client type, the server includes which of the following processing 	Data storage processing, Business Logic Processing 
 #In Fat-client type, the server includes which of the following processing  Presentation processing, Business Logic Processing 
@@ -2129,10 +2129,10 @@ d.SOA
 #Which of the following is NOT the benefit of Multi-tier architecture style Load balancing 
 #What of the following characteristic do MVC and PAC both have Support for developing interactive application 
 #Which of the below description is a limitation of MVC architecture style Does not fit well agent-oriented applications such as interactive mobile and robotics applications 
-#Time to market belong to which ò the following quality attributes group Business attributes 
+#Time to market belong to which ï¿½ the following quality attributes group Business attributes 
 #Which of the following is Open-Close principle Open to extension, Close to modification 
 #Which of the following are considered as implementation attributes interoperability, Maitainability, Portability, Flexibility 
-#Which of the following is not an Open-Close principle’s implication Fell free to change software code. 
+#Which of the following is not an Open-Close principleï¿½s implication Fell free to change software code. 
 #UML diagram are __ which are used for system analysis and design Tools 
 #Polymorphism implies the following All of the others 
 #Abstraction via inheritance is one effective way to achieve to ope-close principle True 
@@ -2140,7 +2140,7 @@ d.SOA
 #Which of the following structures describle the dynamic properties of software architecture Software runtime structure 
 #At software development time, the software alement are-- Source code moudles or files which have been assigned functional and non-functional attributes 
 #Architecture design is aboyt choosing the right single architecture style for a project False 
-#Which view in “4+1” view model indentifies software modules and their boundaries. Interfaces, external environment, usage scenarios, etc. Logical view 
+#Which view in ï¿½4+1ï¿½ view model indentifies software modules and their boundaries. Interfaces, external environment, usage scenarios, etc. Logical view 
 #Object-oriented design is design methoddology true 
 #Which of the following notations is used to support the process view  Activity Diagram 
 #Which od the following diagram is a Structural diagram Class diagram 
@@ -2153,15 +2153,15 @@ d.SOA
 # Software quality attributes must satisfy functional requirements  False 
 # The CRC card method is used to identify the responsibilities of each class  True 
 # Which of the following are considered as Runtime attributes  Availability, Security, Performance, Usability 
-# In a sequence diagram, boxes on top of the diagram can represent classes, objects, and actors… “HumanPlayer”,  An object named “Human” whose class is “player” 
-# What is an architecture design space Design alternatives that can support fun… 
+# In a sequence diagram, boxes on top of the diagram can represent classes, objects, and actorsï¿½ ï¿½HumanPlayerï¿½,  An object named ï¿½Humanï¿½ whose class is ï¿½playerï¿½ 
+# What is an architecture design space Design alternatives that can support funï¿½ 
 # Which are the categories of operations that a class can provide  constructor, destructor, accessor, mutator 
 # Architecture styles contribute to software quality attributes True 
-# For software project resource allocation, the software element are Specific manipulation (Design, implementation, debug…. 
-# Bassed on connector’s information carrier, the connectors in software archete.. Variable, environment resource, method, message 
+# For software project resource allocation, the software element are Specific manipulation (Design, implementation, debugï¿½. 
+# Bassed on connectorï¿½s information carrier, the connectors in software archete.. Variable, environment resource, method, message 
 # Which of the following is a principle of Object Ori  Polymorphism 
 # Which is the following diagram called State machine diagram 
-# Which of the following is not True about architectural design step  We will specify the internal details of each… 
+# Which of the following is not True about architectural design step  We will specify the internal details of eachï¿½ 
 #At software deployment time, the software element are  The executable version of the project modules and files 
 # Which of the following notations is used to support the physical view None of the others 
 # In UML 2.0, which of the following is true Sequence diagram describes time sequence of messages passed .. 

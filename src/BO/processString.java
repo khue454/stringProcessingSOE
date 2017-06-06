@@ -66,11 +66,14 @@ public class processString {
         List<Integer> countDuplicateWord = new ArrayList<>();
         for (int i = 1; i < imageSplit.size(); i++) {
             int countCompare = 0;
-            List<String> stImage = Arrays.asList(imageSplit.get(i).split(" "));
+            List<String> lstImage = Arrays.asList(imageSplit.get(i).trim().toLowerCase().split(" "));
             for (int j = 0; j < key.get(question).size(); j++) {
-                for (int l = 0; l < stImage.size(); l++) {
-                    if (stImage.get(l).trim().toLowerCase().equals(key.get(question).get(j).trim().toLowerCase())) {
-                        countCompare++;
+                List<String> lstFile = Arrays.asList(key.get(question).get(j).trim().toLowerCase().split(" "));
+                for (int k = 0; k < lstImage.size(); k++) {
+                    for (int l = 0; l < lstFile.size(); l++) {
+                        if (lstImage.get(k).equals(lstFile.get(l))) {
+                            countCompare++;
+                        }
                     }
                 }
             }

@@ -10,7 +10,7 @@ public class Test {
 	public static void main(String[] args) {
 		Map<String, List<String>> map = new HashMap<>();
 		try {
-			FileReader fr = new FileReader("SWD_Final.txt");
+			FileReader fr = new FileReader("MLN101.txt");
 			LineNumberReader lr = new LineNumberReader(fr);
 			String st;
 			while ((st = lr.readLine()) != null) {
@@ -31,7 +31,7 @@ public class Test {
 		}
 		Normalization normalization = new Normalization();
 
-		System.out.println(normalization.getCorrectQuestion(map, "(imagePas asdasd )Which of the following is a typical design domain of blackboard architecture?\nA. AI system."));
-		System.out.println(normalization.getCorrectQuestion(map, "# Choose the incorrect statement.: \nA. The process vie"));
+		System.out.println(normalization.getCorrectQuestion(map, "Tiền công tư bản có hai hình thức đó là? \nA. "));
+		System.out.println(map.get(normalization.getCorrectQuestion(map, "Thực tiển là? \nA. ")));
 	}
 }

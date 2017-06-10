@@ -36,9 +36,19 @@ class Normalization {
                 int length = keySplit.size() > questionSplit.size() ? questionSplit.size() : keySplit.size();
 
                 // counting the number of positions from the same string
-                // break if they are not the same.
+                int lastIndex = 0;
                 for (int i = 0; i < length; i++) {
-                    if (questionSplit.get(i).equals(keySplit.get(i))) count++;
+                    if (questionSplit.get(i).equals(keySplit.get(i))) {
+                        lastIndex = i;
+                        count++;
+                    }
+                }
+
+                if (lastIndex > 0) {
+                    for (int i = 1; i < length - lastIndex; i++) {
+                        if (questionSplit.get(questionSplit.size() - i).equals(keySplit.get(keySplit.size() - i)))
+                            count++;
+                    }
                 }
 
                 // if value in keyMap is nullable, create new instance
@@ -54,49 +64,38 @@ class Normalization {
 //            List<List<String>> values = (keyMap.values().stream().collect(Collectors.toList()));
 //            questionSplit = values.get(values.size() - 1);
             List<String> values = keyMap.values().stream().collect(Collectors.toList()).get(keyMap.values().size() - 1);
-            if (values.size() > 1) {
-                values.sort(Comparator.comparing(String::length));
-                question = values.get(0);
-            } else question = values.get(0);
-            int length = keyMap.keySet().parallelStream().collect(Collectors.toList()).get(keyMap.size() - 1);
-            questionSplit = Arrays
-                    .stream(getTextNormalized(question).split("\\s++"))
-                    .collect(Collectors.toList());
-            if (questionSplit.size() < 20) {
-                System.out.println("< 20");
-                System.out.println(length);
-                System.out.println(questionSplit.size());
-                return ((double) length * 10 / questionSplit.size()) >= 8.5 ? question : "ERROR";
-            } else {
-                System.out.println(">= 20");
-                double percent = ((double) length * 10 / questionSplit.size());
-                if (percent >= 7.5) return question;
-                else {
-                    image = getTextNormalized(image);
-                    List<String> imageQuestions = Arrays
-                            .stream(image.split("\\s++"))
-                            .collect(Collectors.toList());
-                    int imageSize = imageQuestions.size();
-                    int questionSize = questionSplit.size();
-                    int count = 0;
-                    length = imageSize > questionSize ? questionSize - length : imageSize - length;
-                    for (int i = 1; i < length; i++) {
-                        if (questionSplit.get(questionSize - i).equalsIgnoreCase(imageQuestions.get(imageSize - i))) {
-                            count++;
-                        }
-                    }
-                    percent += (double) count*10/questionSize;
-                    return percent>=7.5? question: "ERROR";
-                }
+            Map<Double, String> mapQuestion = new TreeMap<>();
+            double maxLength = 0;
+            int imageLength = getTextNormalized(image).trim().length();
+            for (String s : values) {
+                String answer = getTextNormalized(s);
+                double key = imageLength > answer.length() ? (double) answer.length() / imageLength
+                        : (double) imageLength / answer.length();
+                maxLength = key > maxLength ? key : maxLength;
+                mapQuestion.put(key, s);
             }
+            if (maxLength >= 0.7) {
+                question = mapQuestion.values().stream().collect(Collectors.toList()).get(mapQuestion.size() - 1);
+                int length = keyMap.keySet().parallelStream().collect(Collectors.toList()).get(keyMap.size() - 1);
+                questionSplit = Arrays
+                        .stream(getTextNormalized(question).split("\\s++"))
+                        .collect(Collectors.toList());
+                if (questionSplit.size() < 20) {
+                    return ((double) length * 10 / questionSplit.size()) >= 8.5 ? question : "ERROR";
+                } else {
+                    return ((double) length * 10 / questionSplit.size()) >= 7.5 ? question : "ERROR";
+                }
+            } else return "ERROR";
         }
     }
 
     private String getQuestion(String image) {
         String question = "";
         image = image.substring(0, image.indexOf("\nA.") - 1);
-        image = image.trim();
-        image = image.startsWith("(") ? image.substring(image.indexOf(")") + 1) : image;
+        image = image.replaceAll("\n", " ");
+        while (image.trim().startsWith("(")) {
+            image = image.substring(image.indexOf(")") + 1);
+        }
 
         String[] imageSplit = image.split("[\r\n]++");
         for (String item : imageSplit) {
@@ -106,7 +105,7 @@ class Normalization {
     }
 
     // get normalized text
-    String getTextNormalized(String string) {
+    private String getTextNormalized(String string) {
         String[] stringSplit = string.toLowerCase().split("[.]");
         String valueAtPos_0 = stringSplit[0];
         boolean checkFirst = false;
@@ -133,7 +132,7 @@ class Normalization {
             if (isStartKey) {
                 string = "";
                 for (int i = 1; i < stringSplit.length; i++) {
-                    string += stringSplit[i].trim();
+                    string += stringSplit[i].trim() + " ";
                 }
             }
         }
